@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAÇADOR</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <img class="Imagempessoal" src="img/Captura de Tela (84).png" alt="Imagem pessoal"> <br> 
+    <div id="texto">
+    <h1>CAÇADOR</h1>
+    <h2>ESPECIALISTA EM VIDA EXTRATERRESTRE</h2> <br> <br> <br> <br>
+    </div>
+    <div id="listaimg">
+        <img class="lista" src="img/Captura de Tela (88).png" alt="Fotos de locais(1)">
+        <img class="lista" src="img/Captura de Tela (91).png" alt="Fotos de locais(2)">
+        <img class="lista" src="img/Captura de Tela (92).png" alt="Fotos de locais(3)">
+    </div>
+    <div id="txt">
+    <p id = "p">Este serviço oferece uma experiência única e emocionante para aqueles que desejam explorar o desconhecido e caçar seres extraterrestres em ambientes intergalácticos. Nossos caçadores experientes utilizam tecnologia de ponta e técnicas especializadas para garantir a segurança e a satisfação dos nossos clientes.
+
+        Serviços Oferecidos:
+        
+        Exploração: Viagens a locais de avistamentos de UFOs e áreas com atividade extraterrestre.
+        Caça: Equipamentos de última geração para captura e estudo de seres de outros planetas.
+        Treinamento: Cursos para aspirantes a caçadores, com foco em segurança e técnicas de rastreamento.
+        Consultoria: Assessoria para governos e instituições interessadas em estudos sobre vida extraterrestre.</p>
+
+    <p id = "p1">תיאור: שירות זה מציע חוויה ייחודית ומרגשת למי שרוצה לחקור את הלא ידועים ולצוד יצורים מחוץ לכדור הארץ בסביבות בין-גלקטיות. הציידים המנוסים שלנו משתמשים בטכנולוגיה חדשנית ובטכניקות מיוחדות כדי להבטיח את הבטיחות ושביעות הרצון של הלקוחות שלנו.
+
+        השירותים המוצעים:
+        
+        חקר: נסיעה לתצפיות עב"מים ואזורים עם פעילות מחוץ לכדור הארץ.
+        ציד: ציוד חדיש ללכידה וחקר ישויות מכוכבי לכת אחרים.
+        הכשרה: קורסים לציידים שואפים, תוך התמקדות בטכניקות בטיחות ומעקב.
+        ייעוץ: ייעוץ לממשלות ומוסדות המתעניינים במחקרים על חיים מחוץ לכדור הארץ.</p>
+    <p id = "p2">विवरण: यह सेवा उन लोगों के लिए एक अनोखा और रोमांचक अनुभव प्रदान करती है जो अज्ञात का पता लगाना चाहते हैं और अंतरिक्ष वातावरण में अलौकिक प्राणियों का शिकार करना चाहते हैं। हमारे अनुभवी शिकारी हमारे ग्राहकों की सुरक्षा और संतुष्टि सुनिश्चित करने के लिए अत्याधुनिक तकनीक और विशेष तकनीकों का उपयोग करते हैं।
+
+        दी जाने वाली सेवाएँ:
+        
+        अन्वेषण: यूएफओ देखे जाने और अलौकिक गतिविधि वाले क्षेत्रों की यात्रा करें।
+        शिकार: दूसरे ग्रहों के प्राणियों को पकड़ने और उनका अध्ययन करने के लिए अत्याधुनिक उपकरण।
+        प्रशिक्षण: इच्छुक शिकारियों के लिए सुरक्षा और ट्रैकिंग तकनीकों पर ध्यान केंद्रित करने वाले पाठ्यक्रम।
+        परामर्श: अलौकिक जीवन पर अध्ययन में रुचि रखने वाली सरकारों और संस्थानों के लिए सलाह।</p>
+    </div>
+    <h2 class="txt2">INSIRA OS DADOS ABAIXO</h2>
+    <h3 class="txt2">PARA CONTRATAR NOSSOS SERVIÇOS</h3>
+    <form  method="POST">
+        <label for="nome">Nome:</label>
+        <input class="bloco" type="text" id="nome" name="nome" placeholder="NOME" required><br><br>
+
+        <label for="email">E-mail:</label>
+        <input class="bloco" type="email" id="email" name="email" placeholder="E-MAIL" required><br><br>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea class="bloco" id="mensagem" name="mensagem" rows="4" required placeholder="DESCREVA DETALHADAMENTE O ALVO"></textarea><br><br>
+
+        <label for="assunto">Planeta Desejado:</label>
+        <select class="bloco" id="assunto" name="assunto">
+            <option value="Terra">Terra</option>
+            <option value="Tatooine">Tatooine</option>
+            <option value="Krypton">Krypton</option>
+            <option value="Vulcano">Vulcano</option>
+            <option value="Glorzo">Glorzo</option>
+        </select><br><br>
+        <label>Gênero:</label>
+        <div class="radio-group">
+          <input
+            type="radio"
+            id="masculino"
+            name="genero"
+            value="masculino"
+            required
+          />
+          <label for="masculino">Masculino</label>
+          <input type="radio" id="feminino" name="genero" value="feminino" />
+          <label for="feminino">Feminino</label>
+          <input type="radio" id="outro" name="genero" value="outro" />
+          <label for="outro">Outro</label>
+        </div><br>
+        <input onclick="formulario()" id="button" type="submit" value="Enviar">
+    </form>
+</body>
+</html>
